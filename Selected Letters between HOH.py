@@ -3,6 +3,7 @@
 """Opens a new tab with the selected letters and put them between a string of HOH."""
 
 import GlyphsApp
+from PyObjCTools.AppHelper import callAfter
 
 Doc = Glyphs.currentDocument
 Font = Glyphs.font
@@ -17,5 +18,5 @@ editString += keyChars
 for GlyphName in namesOfSelectedGlyphs:
 	editString += ( GlyphName + keyChars )
 
-print output, editString
-Doc.windowController().addTabWithString_( editString )
+print "output:", editString
+callAfter(Glyphs.currentDocument.windowController().addTabWithString_, editString)
