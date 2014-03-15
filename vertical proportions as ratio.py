@@ -25,26 +25,27 @@ class dialog(object):
 		self.w = vanilla.FloatingWindow((250, 130), "Proportions as Ratio")
 
 		# ascender
-		self.w.myTextBox1a = vanilla.TextBox((10, 10, -10, textHeight), "ascender")
-		self.w.editTextNr1 = vanilla.EditText((InputPosX, 10, InputWidth, 20), "5.5", sizeStyle='small')
+		self.w.ascenderText = vanilla.TextBox((10, 10, -10, textHeight), "ascender")
+		self.w.ascenderValue = vanilla.EditText((InputPosX, 10, InputWidth, 20), "5.5", sizeStyle='small')
+
+		# xHeight		
+		self.w.xHeightText = vanilla.TextBox((10, 35, -10, textHeight), "xHeight")
+		self.w.xHeightValue = vanilla.EditText((InputPosX, 35, InputWidth, 20), "10", sizeStyle='small')
+			
+		# descender
+		self.w.descenderText = vanilla.TextBox((10, 60, -10, textHeight), "descender")
+		self.w.descenderValue = vanilla.EditText((InputPosX, 60, InputWidth, 20), "5", sizeStyle='small')
+
+
 		self.w.myTextBox1b = vanilla.TextBox((130, 10, 10, textHeight), unichr(int('23AB', 16)))
-		
 		# bracket extension
 		self.w.myTextBox2 = vanilla.TextBox((130, 22, 10, textHeight), unichr(int('23AA', 16)))
-		
-		# xHeight		
-		self.w.myTextBox3a = vanilla.TextBox((10, 35, -10, textHeight), "xHeight")
-		self.w.editTextNr2 = vanilla.EditText((InputPosX, 35, InputWidth, 20), "10", sizeStyle='small')
 		self.w.myTextBox3b = vanilla.TextBox((130, 35, 10, textHeight), unichr(int('23AC', 16)))
-		self.w.myTextBox3c = vanilla.TextBox((150, 35, -10, textHeight), str(upm) + " upm")
-		
 		# bracket extension
 		self.w.myTextBox4 = vanilla.TextBox((130, 47, 10, textHeight), unichr(int('23AA', 16)))
-		
-		# descender
-		self.w.myTextBox5a = vanilla.TextBox((10, 60, -10, textHeight), "descender")
-		self.w.editTextNr3 = vanilla.EditText((InputPosX, 60, InputWidth, 20), "5", sizeStyle='small')
 		self.w.myTextBox5b = vanilla.TextBox((130, 60, 10, textHeight), unichr(int('23AD', 16)))
+		self.w.myTextBox3c = vanilla.TextBox((150, 35, -10, textHeight), str(upm) + " upm")
+
 		
 		# Button
 		self.w.myButton = vanilla.Button((10, 100, -10, 20), "Do it!", sizeStyle='small', callback=self.buttonCallback) 
@@ -52,9 +53,9 @@ class dialog(object):
 		self.w.open()
 	
 	def buttonCallback(self, sender):
-		ascender = self.w.editTextNr1.get()
-		xHeight = self.w.editTextNr2.get()
-		descender = self.w.editTextNr3.get()
+		ascender = self.w.ascenderValue.get()
+		xHeight = self.w.xHeightValue.get()
+		descender = self.w.descenderValue.get()
 
 		### function for calculating
 		a = float(ascender)
