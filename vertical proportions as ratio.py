@@ -62,9 +62,9 @@ class dialog(object):
 		c = float(descender)
 		sumAll = a + b + c
 		#print "sum:", sumAll
-		a = round(float(ascender) / sumAll * upm)
-		b = round(float(xHeight) / sumAll * upm)
-		c = round(float(descender) / sumAll * upm)
+		a = round(a / sumAll * upm)
+		b = round(b / sumAll * upm)
+		c = round(c / sumAll * upm)
 				
 		total = a + b + c
 		print "unrounded total upm:", total
