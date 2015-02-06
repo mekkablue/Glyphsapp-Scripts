@@ -32,7 +32,6 @@ class Window( object ):
 
     def addSuffix(self, sender):
 		size = int(self.w.suffixValue.get())
-    	#print size
     		
 		### the untouchable code:
 		### get the dimensions of the font
