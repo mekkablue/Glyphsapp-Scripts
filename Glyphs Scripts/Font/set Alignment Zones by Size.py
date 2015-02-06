@@ -1,11 +1,17 @@
 #MenuTitle: Set Size for Alignment Zones
-'''
-enter a Value for the AZ and the script adds the zones according to your Font Dimensions
 
-let me know if you have ideas for improving;
-Mark Froemberg aka DeutschMark @ GitHub
-https://github.com/DeutschMark/Glyphsapp-Scripts
-'''
+# ###################################################################
+#
+# enter a Value for the AZ and the script adds the zones according to
+# your Font Dimensions
+#
+# --> let me know if you have ideas for improving
+# --> Mark Froemberg aka DeutschMark @ GitHub <--
+#
+# ToDo: solve the twisted 'size' variable
+#
+# ###################################################################
+
 import vanilla
 
 Doc = Glyphs.currentDocument
