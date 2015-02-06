@@ -23,6 +23,7 @@ for master in Font.masters:
 	print master
 print
 
+font.disableUpdateInterface()
 class Window( object ):
     def __init__( self ):
         InputPosX = 90
@@ -38,34 +39,32 @@ class Window( object ):
 
     def makeZones(self, sender):
     	size = int(self.w.zonesValue.get())
-    	
-	### the untouchable code:
-	### get the dimensions of the font
-	for master in Font.masters:
-		print master
-		posA = master.ascender
-		posC = master.capHeight
-		posX = master.xHeight
-		posB = 0
-		posD = master.descender
+	
+    	### the untouchable code:
+    	### get the dimensions of the font
+    	for master in Font.masters:
+    		print master
+    		posA = master.ascender
+    		posC = master.capHeight
+    		posX = master.xHeight
+    		posB = 0
+    		posD = master.descender
 
-		dimensions = [ (posA, size), (posC, size), (posX, size), (posB, -size), (posD, -size) ]
+    		dimensions = [ (posA, size), (posC, size), (posX, size), (posB, -size), (posD, -size) ]
 
-		print dimensions
-		newZones = []
-		for d in dimensions:
-			pos, size = d
-			a = GSAlignmentZone.alloc().init()
-			a.setSize_(size)
-			a.setPosition_(pos)
-			newZones.append(a)	
+    		print dimensions
+    		newZones = []
+    		for d in dimensions:
+    			pos, size = d
+    			a = GSAlignmentZone.alloc().init()
+    			a.setSize_(size)
+    			a.setPosition_(pos)
+    			newZones.append(a)	
 
-		#font.disableUpdateInterface()
+    		master.setAlignmentZones_(newZones)
+    		#print master.alignmentZones
 
-		master.setAlignmentZones_(newZones)
-		#print master.alignmentZones
-
-		#font.enableUpdateInterface()
+        font.enableUpdateInterface()
 	self.w.close()
 		
 Window()
