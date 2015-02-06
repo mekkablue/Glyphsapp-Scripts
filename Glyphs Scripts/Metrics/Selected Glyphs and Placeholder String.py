@@ -1,5 +1,17 @@
 #MenuTitle: Selection & HH*HHOO*OO to Tab
 
+# ###################################################################
+#
+# GUI; opens selected characters in new Tab and adds a HH*HHOO*OO
+# string (* = Placeholder)
+#
+# --> let me know if you have ideas for improving
+# --> Mark Froemberg aka DeutschMark @ GitHub <--
+#
+# ToDo: - redesign the GUI (looks a bit hacky)
+#
+# ###################################################################
+
 import GlyphsApp
 import vanilla
 
