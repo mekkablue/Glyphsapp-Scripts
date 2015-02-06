@@ -24,14 +24,14 @@ class Window( object ):
         textHeight = 40
         self.w = vanilla.FloatingWindow( (250, 45), "set Alignment Zones" )
         
-        self.w.suffixText = vanilla.TextBox((10, 10, -10, textHeight), "AZ Size:")
-        self.w.suffixValue = vanilla.EditText((InputPosX, 10, InputWidth, 20), "15", sizeStyle='small')
-        self.w.make_button = vanilla.Button((-80, 12, -15, 17), "Create", sizeStyle='small', callback=self.addSuffix)
+        self.w.zonesText = vanilla.TextBox((10, 10, -10, textHeight), "AZ Size:")
+        self.w.zonesValue = vanilla.EditText((InputPosX, 10, InputWidth, 20), "15", sizeStyle='small')
+        self.w.make_button = vanilla.Button((-80, 12, -15, 17), "Create", sizeStyle='small', callback=self.makeZones)
     
         self.w.open()
 
-    def addSuffix(self, sender):
-    	size = int(self.w.suffixValue.get())
+    def makeZones(self, sender):
+    	size = int(self.w.zonesValue.get())
     	
 	### the untouchable code:
 	### get the dimensions of the font
