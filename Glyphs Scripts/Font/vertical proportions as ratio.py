@@ -1,15 +1,18 @@
 #MenuTitle: Vertical Proportions as Ratio
-'''
-put your desired proportions for instance 5 : 10 : 5;
-it will recalculate whatever your upm is set to;
-ignores the cap height for now;
-let me know if you have ideas for improving;
-Mark Froemberg aka DeutschMark @ GitHub
-https://github.com/DeutschMark/Glyphsapp-Scripts
-ToDo:
-	- deal with Multiple Masters
-	- update Alignment Zones
-'''
+
+# ###################################################################
+#
+# put your desired proportions for instance 5 : 10 : 5;
+# it will recalculate whatever your upm is set to;
+# ignores the cap height for now;
+#
+# --> let me know if you have ideas for improving
+# --> Mark Froemberg aka DeutschMark @ GitHub <--
+#
+# ToDo: - deal with Multiple Masters
+#		- update Alignment Zones
+#
+# ###################################################################
 
 import GlyphsApp
 import vanilla
