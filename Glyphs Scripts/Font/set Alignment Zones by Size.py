@@ -41,6 +41,6 @@ for d in dimensions:
 font.disableUpdateInterface()
 
 master.setAlignmentZones_(newZones)
-print master.alignmentZones
+#print master.alignmentZones
 
 font.enableUpdateInterface()
