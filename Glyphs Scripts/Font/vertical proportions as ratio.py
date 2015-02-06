@@ -78,7 +78,9 @@ class dialog(object):
 		
 		master.ascender = roundedA + b		
 		master.xHeight = b
-		master.descender = -c				
+		master.descender = -c
+		
+		self.w.close()
 		
 
 dialog()
