@@ -1,4 +1,4 @@
-#MenuTitle: Set Alignment Zones by Size
+#MenuTitle: Set Size for Alignment Zones
 '''
 enter a Value for the AZ and the script adds the zones according to your Font Dimensions
 
@@ -11,10 +11,11 @@ import vanilla
 Doc = Glyphs.currentDocument
 Font = Glyphs.font
 Selection = Font.selectedLayers
-#help(Font)
 
 #print Font.fontMasters
-#print Font.masters
+for master in Font.masters:
+	print master
+print
 
 class Window( object ):
     def __init__( self ):
@@ -25,46 +26,41 @@ class Window( object ):
         
         self.w.suffixText = vanilla.TextBox((10, 10, -10, textHeight), "AZ Size:")
         self.w.suffixValue = vanilla.EditText((InputPosX, 10, InputWidth, 20), "15", sizeStyle='small')
-
         self.w.make_button = vanilla.Button((-80, 12, -15, 17), "Create", sizeStyle='small', callback=self.addSuffix)
     
         self.w.open()
 
-		
-    def buttonCheck( self, sender ):
-        size = sender.get()
-        
-
     def addSuffix(self, sender):
     		size = int(self.w.suffixValue.get())
-    		print size
+    		#print size
     		
 		### the untouchable code:
 		### get the dimensions of the font
-		master = Font.masters[0]
-		posA = master.ascender
-		posC = master.capHeight
-		posX = master.xHeight
-		posB = 0
-		posD = master.descender
+		for master in Font.masters:
+			print master
+			posA = master.ascender
+			posC = master.capHeight
+			posX = master.xHeight
+			posB = 0
+			posD = master.descender
 
-		dimensions = [ (posA, size), (posC, size), (posX, size), (posB, -size), (posD, -size) ]
+			dimensions = [ (posA, size), (posC, size), (posX, size), (posB, -size), (posD, -size) ]
 
-		print dimensions
-		newZones = []
-		for d in dimensions:
-			pos, size = d
-			a = GSAlignmentZone.alloc().init()
-			a.setSize_(size)
-			a.setPosition_(pos)
-			newZones.append(a)	
+			print dimensions
+			newZones = []
+			for d in dimensions:
+				pos, size = d
+				a = GSAlignmentZone.alloc().init()
+				a.setSize_(size)
+				a.setPosition_(pos)
+				newZones.append(a)	
 
-		#font.disableUpdateInterface()
+			#font.disableUpdateInterface()
 
-		master.setAlignmentZones_(newZones)
-		#print master.alignmentZones
+			master.setAlignmentZones_(newZones)
+			#print master.alignmentZones
 
-		#font.enableUpdateInterface()
-		self.w.close()
+			#font.enableUpdateInterface()
+			self.w.close()
 		
 Window()
