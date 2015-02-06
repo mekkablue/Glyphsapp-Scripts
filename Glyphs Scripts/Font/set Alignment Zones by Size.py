@@ -31,36 +31,35 @@ class Window( object ):
         self.w.open()
 
     def addSuffix(self, sender):
-    		size = int(self.w.suffixValue.get())
-    		#print size
+    	size = int(self.w.suffixValue.get())
     		
-		### the untouchable code:
-		### get the dimensions of the font
-		for master in Font.masters:
-			print master
-			posA = master.ascender
-			posC = master.capHeight
-			posX = master.xHeight
-			posB = 0
-			posD = master.descender
+	### the untouchable code:
+	### get the dimensions of the font
+	for master in Font.masters:
+		print master
+		posA = master.ascender
+		posC = master.capHeight
+		posX = master.xHeight
+		posB = 0
+		posD = master.descender
 
-			dimensions = [ (posA, size), (posC, size), (posX, size), (posB, -size), (posD, -size) ]
+		dimensions = [ (posA, size), (posC, size), (posX, size), (posB, -size), (posD, -size) ]
 
-			print dimensions
-			newZones = []
-			for d in dimensions:
-				pos, size = d
-				a = GSAlignmentZone.alloc().init()
-				a.setSize_(size)
-				a.setPosition_(pos)
-				newZones.append(a)	
+		print dimensions
+		newZones = []
+		for d in dimensions:
+			pos, size = d
+			a = GSAlignmentZone.alloc().init()
+			a.setSize_(size)
+			a.setPosition_(pos)
+			newZones.append(a)	
 
-			#font.disableUpdateInterface()
+		#font.disableUpdateInterface()
 
-			master.setAlignmentZones_(newZones)
-			#print master.alignmentZones
+		master.setAlignmentZones_(newZones)
+		#print master.alignmentZones
 
-			#font.enableUpdateInterface()
-			self.w.close()
+		#font.enableUpdateInterface()
+		self.w.close()
 		
 Window()
