@@ -60,6 +60,6 @@ class Window( object ):
 		#print master.alignmentZones
 
 		#font.enableUpdateInterface()
-		self.w.close()
+	self.w.close()
 		
 Window()
