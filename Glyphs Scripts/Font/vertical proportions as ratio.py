@@ -57,6 +57,7 @@ class dialog(object):
 		self.w.myButton = vanilla.Button((10, 100, -10, 20), "Do it!", sizeStyle='small', callback=self.buttonCallback) 
 		self.w.setDefaultButton( self.w.myButton )
 		self.w.open()
+		self.w.makeKey() ### Focus on window and Button
 	
 	def buttonCallback(self, sender):
 		ascender = self.w.ascenderValue.get()
