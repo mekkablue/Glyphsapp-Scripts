@@ -9,8 +9,7 @@
 # --> let me know if you have ideas for improving
 # --> Mark Froemberg aka DeutschMark @ GitHub <--
 #
-# ToDo: - deal with Multiple Masters
-#		- update Alignment Zones
+# ToDo: - update Alignment Zones
 #
 # ###################################################################
 
@@ -19,8 +18,9 @@ import vanilla
 
 font = Glyphs.font
 Layer = font.selectedLayers[0]
-master = font.masters[0]
+masters = font.masters
 upm = font.upm
+
 
 class dialog(object):
 	def __init__(self):
@@ -82,9 +82,10 @@ class dialog(object):
 		print "xHeight:", b
 		print "descender:", -c
 
-		master.ascender = roundedA + b
-		master.xHeight = b
-		master.descender = -c
+		for master in masters:
+			master.ascender = roundedA + b
+			master.xHeight = b
+			master.descender = -c
 
 		self.w.close()
 
