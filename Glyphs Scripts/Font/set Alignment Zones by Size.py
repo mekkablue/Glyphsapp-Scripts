@@ -31,7 +31,7 @@ class Window( object ):
 
         self.w.setDefaultButton( self.w.make_button )
         self.w.open()
-        self.w.makeKey()
+        self.w.makeKey() ### Focus on window and Button
 
     def makeZones(self, sender):
         inputSize = int(self.w.zonesValue.get())
