@@ -37,11 +37,10 @@ class dialog(object):
 		# xHeight		
 		self.w.xHeightText = vanilla.TextBox((10, 35, -10, textHeight), "xHeight")
 		self.w.xHeightValue = vanilla.EditText((InputPosX, 35, InputWidth, 20), "10", sizeStyle='small')
-			
+
 		# descender
 		self.w.descenderText = vanilla.TextBox((10, 60, -10, textHeight), "descender")
 		self.w.descenderValue = vanilla.EditText((InputPosX, 60, InputWidth, 20), "5", sizeStyle='small')
-
 
 		self.w.myTextBox1b = vanilla.TextBox((130, 10, 10, textHeight), unichr(int('23AB', 16)))
 		# bracket extension
@@ -52,13 +51,13 @@ class dialog(object):
 		self.w.myTextBox5b = vanilla.TextBox((130, 60, 10, textHeight), unichr(int('23AD', 16)))
 		self.w.myTextBox3c = vanilla.TextBox((150, 35, -10, textHeight), str(upm) + " upm")
 
-		
+
 		# Button
-		self.w.myButton = vanilla.Button((10, 100, -10, 20), "Do it!", sizeStyle='small', callback=self.buttonCallback) 
+		self.w.myButton = vanilla.Button((10, 100, -10, 20), "Do it!", sizeStyle='small', callback=self.buttonCallback)
 		self.w.setDefaultButton( self.w.myButton )
 		self.w.open()
 		self.w.makeKey() ### Focus on window and Button
-	
+
 	def buttonCallback(self, sender):
 		ascender = self.w.ascenderValue.get()
 		xHeight = self.w.xHeightValue.get()
@@ -73,7 +72,7 @@ class dialog(object):
 		a = round(a / sumAll * upm)
 		b = round(b / sumAll * upm)
 		c = round(c / sumAll * upm)
-				
+
 		total = a + b + c
 		print "unrounded total upm:", total
 		difference = total - upm
@@ -82,12 +81,11 @@ class dialog(object):
 		print "ascender:", roundedA, "above the xHeight"
 		print "xHeight:", b
 		print "descender:", -c
-		
-		master.ascender = roundedA + b		
+
+		master.ascender = roundedA + b
 		master.xHeight = b
 		master.descender = -c
-		
+
 		self.w.close()
-		
 
 dialog()
