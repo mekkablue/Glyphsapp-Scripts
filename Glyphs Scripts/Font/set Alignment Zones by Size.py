@@ -34,7 +34,7 @@ class Window( object ):
         self.w.makeKey()
 
     def makeZones(self, sender):
-        size = int(self.w.zonesValue.get())
+        inputSize = int(self.w.zonesValue.get())
         self.w.close()
 
         ### the untouchable code:
@@ -47,7 +47,7 @@ class Window( object ):
             posB = 0
             posD = master.descender
 
-            dimensions = [ (posA, size), (posC, size), (posX, size), (posB, -size), (posD, -size) ]
+            dimensions = [ (posA, inputSize), (posC, inputSize), (posX, inputSize), (posB, -inputSize), (posD, -inputSize) ]
 
             print dimensions
             newZones = []
