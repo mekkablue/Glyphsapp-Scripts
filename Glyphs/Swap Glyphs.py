@@ -7,7 +7,7 @@
 # --> let me know if you have ideas for improving
 # --> Mark Froemberg aka DeutschMark @ GitHub <--
 #
-# ToDo: - Test
+# ToDo: -
 #
 # ###################################################################
 
