@@ -3,13 +3,15 @@
 # ###################################################################
 #
 # creates a new Glyphs with some lines according to the Font Metrics
+# deals with italic angle now
+#
 # (!) take care to have the GSPen.py & objectsGS.py on first level of
 # the glyphs scripts folder for the RoboFab to work
 # 
 # --> let me know if you have ideas for improving
 # --> Mark Froemberg aka DeutschMark @ GitHub <--
 #
-# ToDo: - deal with italic angle
+# ToDo: -
 #
 # ###################################################################
 
