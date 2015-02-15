@@ -10,6 +10,7 @@
 # 
 # --> let me know if you have ideas for improving
 # --> Mark Froemberg aka DeutschMark @ GitHub <--
+# --> www.mirque.de <--
 #
 # ToDo: -
 #
