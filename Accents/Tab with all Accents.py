@@ -6,6 +6,7 @@
 # 
 # --> let me know if you have ideas for improving
 # --> Mark Froemberg aka DeutschMark @ GitHub <--
+# --> www.mirque.de <--
 #
 # ToDo: - get rid of GUI and add Uppercase OR:
 #       - make Dropdown for UC and LC
