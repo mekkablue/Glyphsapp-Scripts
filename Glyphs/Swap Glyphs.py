@@ -1,8 +1,9 @@
 #MenuTitle: Swap Glyphs
-
+# -*- coding: utf-8 -*-
+__doc__="""
+Swap 2 selected characters
+"""
 # ###################################################################
-#
-# Swaps 2 Characters (basically just renaming each other)
 # 
 # --> let me know if you have ideas for improving
 # --> Mark Froemberg aka DeutschMark @ GitHub <--
