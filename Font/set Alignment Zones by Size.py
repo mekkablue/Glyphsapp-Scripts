@@ -1,4 +1,5 @@
 #MenuTitle: Set Size for Alignment Zones
+# -*- coding: utf-8 -*-
 __doc__="""
 Add ALignment Zones for all Masters according to input size (UI)
 """

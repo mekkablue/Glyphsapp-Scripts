@@ -1,16 +1,16 @@
 #MenuTitle: Vertical Proportions as Ratio
-
+# -*- coding: utf-8 -*-
+__doc__="""
+Resize vertical Metrics according to Ratio (e.g. 5:10:4)
+"""
 # ###################################################################
-#
-# put your desired proportions for instance 5 : 10 : 5;
-# it will recalculate whatever your upm is set to;
-# ignores the cap height for now;
 #
 # --> let me know if you have ideas for improving
 # --> Mark Froemberg aka DeutschMark @ GitHub <--
 # --> www.mirque.de <--
 #
 # ToDo: - update Alignment Zones
+#		- include Cap Height
 #
 # ###################################################################
 

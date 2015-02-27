@@ -1,4 +1,5 @@
 #MenuTitle: Show FontInfo for Instances
+# -*- coding: utf-8 -*-
 __doc__="""
 Output a summary of all instance settings in Macro Window
 """
