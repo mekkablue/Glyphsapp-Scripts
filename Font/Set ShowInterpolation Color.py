@@ -34,7 +34,7 @@ class ColorWellWindow(object):
         #print "color well edit!", sender.get()
         color = str(sender.get())
         color2 = color.split(" ")
-        color3 = ";".join(color2[1:-1])
+        color3 = ";".join(color2[1:])
 
         ## CP Handling
         cpName = "ShowInterpolation"
