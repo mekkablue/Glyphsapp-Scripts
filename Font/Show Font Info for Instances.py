@@ -1,8 +1,8 @@
 #MenuTitle: Show FontInfo for Instances
-
+__doc__="""
+Output a summary of all instance settings in Macro Window
+"""
 # ###################################################################
-#
-# opens Macro Window for outputting a resume of all instance settings
 #
 # --> let me know if you have ideas for improving
 # --> Mark Froemberg aka DeutschMark @ GitHub <--
