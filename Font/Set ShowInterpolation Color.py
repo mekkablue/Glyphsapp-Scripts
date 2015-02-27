@@ -36,7 +36,7 @@ class ColorWellWindow(object):
         color2 = color.split(" ")
         color3 = ";".join(color2[1:-1])
 
-		## CP Handling
+        ## CP Handling
         cpName = "ShowInterpolation"
         cpValue = color3
 
