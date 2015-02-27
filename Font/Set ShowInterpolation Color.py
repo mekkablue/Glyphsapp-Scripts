@@ -42,7 +42,7 @@ class ColorWellWindow(object):
 
         ### OVERWRITING existing CP
         for instance in thisFont.instances:
-			instance.customParameters[cpName] = cpValue
+            instance.customParameters[cpName] = cpValue
 
 ColorWellWindow()
 
