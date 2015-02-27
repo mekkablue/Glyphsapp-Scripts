@@ -1,9 +1,9 @@
 #MenuTitle: Create empty .suffix Glyphs from selected Glyphs
-
+# -*- coding: utf-8 -*-
+__doc__="""
+Generate a copy of selected characters and add input suffix (UI)
+"""
 # ###################################################################
-#
-# select the Characters to copy, put a suffix and get copies with
-# the according suffix
 #
 # --> let me know if you have ideas for improving
 # --> Mark Froemberg aka DeutschMark @ GitHub <--

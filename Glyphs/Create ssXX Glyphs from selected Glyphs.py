@@ -1,9 +1,9 @@
 #MenuTitle: Create empty .ssXX-Copies from selected Glyphs
-
+# -*- coding: utf-8 -*-
+__doc__="""
+Generate x copies of selected characters and add .ssXX
+"""
 # ###################################################################
-#
-# select the Characters to copy, put a number and get XX copies with
-# the according .ssXX suffix
 #
 # --> let me know if you have ideas for improving
 # --> Mark Froemberg aka DeutschMark @ GitHub <--

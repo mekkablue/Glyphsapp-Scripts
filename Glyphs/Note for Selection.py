@@ -1,8 +1,9 @@
 #MenuTitle: Note for Selection
-
+# -*- coding: utf-8 -*-
+__doc__="""
+Add a note to all selected characters (UI)
+"""
 # ###################################################################
-#
-# adds a note to all selected characters
 # 
 # --> let me know if you have ideas for improving
 # --> Mark Froemberg aka DeutschMark @ GitHub <--
