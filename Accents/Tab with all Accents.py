@@ -1,8 +1,9 @@
 #MenuTitle: Tab w/ all Accents
-
+# -*- coding: utf-8 -*-
+__doc__="""
+Open tab with all existing Accents
+"""
 # ###################################################################
-#
-# all accents that are in the font so far (complete list)
 # 
 # --> let me know if you have ideas for improving
 # --> Mark Froemberg aka DeutschMark @ GitHub <--
@@ -10,7 +11,6 @@
 #
 # ToDo: - get rid of GUI and add Uppercase OR:
 #       - make Dropdown for UC and LC
-#	- TEST
 #
 # ###################################################################
 
