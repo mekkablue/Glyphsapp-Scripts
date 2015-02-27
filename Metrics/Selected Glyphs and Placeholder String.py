@@ -1,9 +1,9 @@
 #MenuTitle: Selection & HH*HHOO*OO to Tab
-
+# -*- coding: utf-8 -*-
+__doc__="""
+New Tab with selected characters as placeholders between HH*HHOO*OO (UI)
+"""
 # ###################################################################
-#
-# GUI; opens selected characters in new Tab and adds a HH*HHOO*OO
-# string (* = Placeholder)
 #
 # --> let me know if you have ideas for improving
 # --> Mark Froemberg aka DeutschMark @ GitHub <--

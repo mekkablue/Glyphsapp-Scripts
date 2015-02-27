@@ -1,16 +1,15 @@
 #MenuTitle: Tab with selected letters between HOH
 # -*- coding: utf-8 -*-
-
+__doc__="""
+New Tab with selected characters as placeholders between HH*HHOO*OO
+"""
 # ###################################################################
-#
-# Opens a new tab with the selected letters and put them between a
-# bunch of HOH*HOHO etc
 #
 # --> let me know if you have ideas for improving
 # --> Mark Froemberg aka DeutschMark @ GitHub <--
 # --> www.mirque.de <--
 #
-# ToDo: solve the twisted 'size' variable
+# ToDo: -
 #
 # ###################################################################
 

@@ -1,9 +1,9 @@
 #MenuTitle: Fontmetrics-Glyph
-
+# -*- coding: utf-8 -*-
+__doc__="""
+Generate a Glyph with lines at vertical metrics
+"""
 # ###################################################################
-#
-# creates a new Glyphs with some lines according to the Font Metrics
-# deals with italic angle now
 #
 # (!) take care to have the GSPen.py & objectsGS.py on first level of
 # the glyphs scripts folder for the RoboFab to work
