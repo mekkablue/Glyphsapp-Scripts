@@ -1,9 +1,8 @@
 #MenuTitle: Set Size for Alignment Zones
-
+__doc__="""
+Add ALignment Zones for all Masters according to input size (UI)
+"""
 # ###################################################################
-#
-# enter a Value for the AZ and the script adds the zones according to
-# your Font Dimensions
 #
 # --> let me know if you have ideas for improving
 # --> Mark Froemberg aka DeutschMark @ GitHub <--
