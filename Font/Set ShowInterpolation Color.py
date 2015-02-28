@@ -27,7 +27,7 @@ class ColorWellWindow(object):
         self.w = Window((150, 50), "set color")
         self.w.colorWell = ColorWell((10, 10, -10, -10),
                             callback=self.colorWellEdit,
-                            color=NSColor.redColor())
+                            color=NSColor.blueColor())
         self.w.open()
 
     def colorWellEdit(self, sender):
