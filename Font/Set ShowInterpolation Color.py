@@ -27,11 +27,10 @@ class ColorWellWindow(object):
         self.w = Window((150, 50), "set color")
         self.w.colorWell = ColorWell((10, 10, -10, -10),
                             callback=self.colorWellEdit,
-                            color=NSColor.blueColor())
+                            color=NSColor.colorWithCalibratedRed_green_blue_alpha_( 0, 0.2, 1, .25).set())
         self.w.open()
 
     def colorWellEdit(self, sender):
-        #print "color well edit!", sender.get()
         color = str(sender.get())
         color2 = color.split(" ")
         color3 = ";".join(color2[1:])
