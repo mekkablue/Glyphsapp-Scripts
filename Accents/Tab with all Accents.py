@@ -1,4 +1,4 @@
-#MenuTitle: Tab w/ all Accents
+#MenuTitle: Tab with all Accents
 # -*- coding: utf-8 -*-
 __doc__="""
 Open tab with all existing Accents
